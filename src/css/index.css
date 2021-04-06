@@ -80,7 +80,7 @@
 body {
   background-color: #F2F3F7;
   font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 ul, li, a {
