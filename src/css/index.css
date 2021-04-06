@@ -545,6 +545,12 @@ header .navbar .container .navbar-nav .nav-link {
   height: 44px;
 }
 
+@media (max-width: 575.98px) {
+  .affected-areas-right-body-form .form-control {
+    width: 100% !important;
+  }
+}
+
 .affected-areas-right-body-form .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -606,6 +612,12 @@ header .navbar .container .navbar-nav .nav-link {
   border: 0.5px solid #DADBE7;
 }
 
+@media (max-width: 575.98px) {
+  .affected-areas-right-body .line-divider {
+    width: 100% !important;
+  }
+}
+
 .affected-areas-right-body .affected-areas-country-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,6 +643,12 @@ header .navbar .container .navbar-nav .nav-link {
   margin-top: 14px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
+}
+
+@media (max-width: 575.98px) {
+  .affected-areas-right-body .affected-areas-country-item {
+    width: 100% !important;
+  }
 }
 
 .affected-areas-right-body .affected-areas-country-item:hover {
