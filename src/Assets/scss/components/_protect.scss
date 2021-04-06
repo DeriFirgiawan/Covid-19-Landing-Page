@@ -1,0 +1,39 @@
+.protect {
+  margin-top: 58px;
+  // Mobile Version
+  @include Media ($mobile) {
+    text-align: center;
+    &-container {
+      justify-content: center !important;
+      &-item {
+        align-items: center !important;
+      }
+    }
+  }
+  &-container {
+    @include FlexBox(flex, center, space-between, wrap);
+    @include MarginTop2();
+    &-item {
+      @include FlexBox(flex, start, flex-start, nowrap, column);
+      width: 270px;
+      height: 414;
+      &-text {
+        margin-top: 27px;
+        h3 {
+          font-weight: $medium;
+          line-height: 34px;
+          color: $color-BlueDarkPrimary;
+          width: 268px;
+        }
+        p {
+          line-height: 24px;
+          color: #6468A1;
+        }
+      }
+      &-img {
+        width: 113px !important;
+        height: 114px !important;
+      }
+    }
+  }
+}

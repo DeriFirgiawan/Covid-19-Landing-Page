@@ -1,0 +1,47 @@
+// BreakPoint
+
+
+@mixin Media($br: $tablet) {
+  @media (max-width: $br) {
+    @content;
+  }
+}
+
+@mixin FlexBox($display: flex, $alignItems: center, $justifyContent: center, $wrap: nowrap, $direction: row) {
+  display: $display;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+@mixin CardsStyle($bg: $color-Secondary, $shadow: $shadow1, $radius: 10px, $height: 357px, $width: 370px) {
+  background: $bg;
+  box-shadow: $shadow;
+  border-radius: $radius;
+  border: none !important;
+  height: $height;
+  width: $width;
+}
+
+// Card Style Reset
+@mixin ResetCard($bg: $color-Secondary, $shadow: $shadow1, $radius: 10px) {
+  background: $bg;
+  box-shadow: $shadow;
+  border-radius: $radius;
+  border: none !important;
+}
+
+// Margin Top
+@mixin MarginTop1() {
+  margin-top: 78px;
+}
+
+@mixin MarginTop2() {
+  margin-top: 72px;
+}
+
+// Animation
+@mixin Fade($sec: 1s) {animation: fade $sec ease-in-out both;}
+@mixin Fade-In-Right($sec: 1s) {animation: fade-in-right $sec ease-in-out both;}
+@mixin Zoom-In($sec: 1s) {animation: zoom-in $sec ease-in-out both;}

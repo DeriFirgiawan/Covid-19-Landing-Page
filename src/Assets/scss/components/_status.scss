@@ -1,0 +1,39 @@
+.status {
+  @include CardsStyle();
+  width: 100%;
+  margin-top: -75px;
+  height: 157px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(190, 193, 224, 0.320039);
+  padding: 21px 23px;
+  // <------------ Tablet Version ---------->
+  @include Media () {
+    height: auto;
+  }
+  .card-body {
+    @include FlexBox();
+    @include Media ($mobile) {
+      flex-direction: column;
+      .box {
+        margin-top: 1.25rem;
+      }
+    }
+    .box {
+      @include FlexBox(inline-flex, start, flex-start);
+      width: 280.32px;
+      .box-text {
+        p {
+          color: #6468A1;
+          font-size: $sizeXsm !important;
+          line-height: 22px;
+          padding: 0;
+          margin: 0;
+        }
+        h2 {
+          font-weight: $medium !important;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

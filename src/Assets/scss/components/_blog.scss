@@ -1,0 +1,57 @@
+.blog {
+  @include MarginTop1();
+  &-container {
+    @include FlexBox(flex, center, space-between, wrap);
+    @include MarginTop2();
+    // Mobile Version
+    @include Media ($mobile) {
+      justify-content: center;
+    }
+    @include Media () {
+      justify-content: center;
+    }
+    &-item {
+      @include CardsStyle();
+      width: 357px !important;
+      margin-top: 32px;
+      height: auto;
+      color: #6468A1;
+      .blog-dummy-img {
+        background-color: #C6C6C6;
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+        height: 174px;
+      }
+      &-body {
+        padding: 28px;
+        h3 {
+          color: $color-BlueDarkPrimary;
+        }
+      }
+      &-footer {
+        @include FlexBox(flex, center, space-between);
+        padding-left: 28px;
+        padding-right: 28px;
+        background-color: transparent;
+        border: none;
+        span {
+          color: #878AA1;
+          &:nth-child(2) {
+            color: $color-BlueDarkPrimary;
+          }
+        }
+      }
+    }
+  }
+  &-button {
+    margin-top: 54px;
+    .btn-danger {
+      border-radius: 5px;
+      background-color: $color-RedPrimary;
+      color: $color-Secondary;
+      font-weight: $medium;
+      width: 113px;
+      height: 44px;
+    }
+  }
+}

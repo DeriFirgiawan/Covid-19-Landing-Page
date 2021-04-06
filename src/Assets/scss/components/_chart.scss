@@ -1,0 +1,158 @@
+.affected-areas {
+  @include FlexBox(flex, center, space-between, wrap);
+  margin-top: 32px;
+  .card {
+    @include ResetCard();
+    &-body {
+      padding: 29px 29px 29px 25px !important;
+    }
+  }
+  // Mobile Version
+  @include Media ($mobile) {
+    justify-content: center !important;
+    &-left {
+      height: auto !important;
+      &-body {
+        &-text {
+          justify-content: center !important;
+          flex-wrap: wrap;
+          &-right {
+            flex-direction: column !important;
+            .wrapper {
+              span {
+                color: #6468A1;
+                font-size: $sizeSm !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // <------------ Tablet Version ---------->
+  @include Media () {
+    justify-content: center !important;
+    &-left {
+      height: auto;
+      &-body {
+        &-img {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &-right {
+      margin-top: 14px;
+    }
+  }
+  
+  &-left {
+    width: 750px;
+    height: 668px;
+    &-body {
+      &-text {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+        h3 {
+          font-weight: $medium;
+        }
+        &-right {
+          @include FlexBox(flex, flex-start, space-between);
+          .wrapper {
+            @include FlexBox(flex, center, center);
+            padding-left: 15px;
+            span {
+              color: #6468A1;
+              font-size: $sizeSm !important;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  &-right {
+    width: 350px;
+    height: 668px;
+    &-body {
+      &-form {
+        position: relative;
+        bottom: 25px;
+        .icon-input {
+          @include FlexBox(inline-flex,center,center);
+          background-color: $color-Primary;
+          border-radius: 45%;
+          width: 30px;
+          height: 28px;
+          position: relative;
+          right: 0;
+          left: 15.9rem;
+          top: 2.4rem;
+          pointer-events: none;
+        }
+        .form-control {
+          border: 1px solid #B8BACC !important;
+          border-radius: 5px;
+          width: 300px;
+          height: 44px;
+          &:focus {
+            box-shadow: none !important;
+            outline: 0 !important;
+          }
+          &::placeholder {
+            color: #9195CB;
+          }
+        }
+        .affected-areas-right-body-global {
+          @include FlexBox(flex, center, space-between);
+          padding: .375rem .75rem;
+          border: 1px solid #262C7C;
+          border-radius: 5px;
+          width: 300px;
+          height: 44px;
+          margin-top: $sizeSm;
+          span {
+            color: #262C7C;
+            &:nth-child(1) {
+              font-weight: $medium;
+            }
+          }
+        }
+      }
+      .line-divider {
+        padding: 0;
+        width: 300px;
+        height: 0.5px;
+        border: 0.5px solid #DADBE7;
+      }
+      .affected-areas-country {
+        &-item {
+          @include FlexBox(flex, center, space-between);
+          cursor: pointer;
+          background: #F2F3F7;
+          border-radius: 5px;
+          width: 300px;
+          height: 44px;
+          padding: .375rem .75rem;
+          margin-top: 14px;
+          transition: .5s ease;
+          &:hover {
+            background-color: #e4e5e9;
+          }
+          &-icon {
+            @include FlexBox(inline-flex, center, flex-start);
+            .name-country {
+              color: $color-Text-BlackPrimary;
+              font-weight: $medium;
+            }
+          }
+          .amount {
+            color: #6468A1;
+          }
+        }
+      }
+    }
+  }
+}

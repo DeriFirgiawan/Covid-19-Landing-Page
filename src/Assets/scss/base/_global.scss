@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-Primary; 
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+ul,li,a {
+  list-style: none;
+  text-decoration: none;
+}
+
+// Reset Tag Font Size
+h1 {
+  font-size: $sizeLg !important;
+}
+
+h2 {
+  font-size: $sizeMd !important;
+}
+
+h3 {
+  font-size: $sizeMd-S !important;
+}
+
+p {
+  font-size: $sizeSm !important;
+}
+
+span {
+  font-size: $sizeXsm !important;
+}
+
+.title-content {
+  color: #262C7C;
+  font-weight: $medium;
+}
+
+// .fade {
+//   @include Fade();
+// }

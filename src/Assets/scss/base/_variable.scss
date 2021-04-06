@@ -1,0 +1,29 @@
+// BreakPoint
+$tablet: 991.98px;
+$mobile: 575.98px;
+
+// Colors
+$color-Primary: #F2F3F7;
+$color-Secondary: #FFFF;
+$color-BlueDarkPrimary: #262C7C;
+$color-BlueDarkSecondary: #BEC1E0;
+$color-RedPrimary: #EB0065;
+$color-Text-BlackPrimary: #2D2E39;
+$color-Text-BlackSecondary: #3D3F52;
+
+// Font Size
+$sizeLg: 2rem; // 32px
+$sizeMd: 1.5rem; // 24px;
+$sizeMd-S: 1.25rem; // 20px;
+$sizeSm: 1rem; // 16px;
+$sizeXsm: .875rem; // 14px;
+
+// Font-Weight
+$regular: 400;
+$medium: $regular + 100;
+$semiBold: $medium + 100;
+$bold: $semiBold + 100;
+$extraBold: $bold + 100;
+
+// Shadows
+$shadow1: 0px 4px 28px rgba(228, 229, 247, 0.292259), 0px 4px 8px rgba(190, 193, 224, 0.320039);

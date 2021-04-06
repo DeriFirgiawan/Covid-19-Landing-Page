@@ -1,0 +1,35 @@
+.spread {
+  @include MarginTop1();
+  &-container {
+    @include FlexBox(flex, start, space-between, wrap);
+    @include MarginTop2();
+    // Tablet Version
+    @include Media () {
+      justify-content: center !important;
+      &-item {
+        margin-top: 32px;
+      }
+    }
+    &-item {
+      @include CardsStyle();
+      width: 357px !important;
+      height: 357px !important;
+      &-body {
+        padding: 30px 28px !important;
+        &-text {
+          color: $color-BlueDarkPrimary;
+          margin-top: 17px;
+          h3 {
+            font-weight: $medium;
+          }
+        }
+      }
+    }
+  }
+}
+
+#Symptopms {
+  p {
+    color: #6468A1;
+  }
+}

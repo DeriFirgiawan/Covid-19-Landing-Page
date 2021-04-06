@@ -1,0 +1,73 @@
+.faq-page {
+  background-color: $color-Secondary;
+  margin-top: 74px;
+  width: 100%;
+  height: 543px;
+  padding-top: 65px;
+  @include Media ($mobile) {
+    height: auto;
+  }
+  @include Media () {
+    height: auto;
+  }
+  &-content {
+    &-container {
+      @include FlexBox(flex, flex-start, space-between);
+      // Mobile Version
+      @include Media ($mobile) {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      margin-top: 76px;
+      color: #6468A1;
+      .faq {
+        &-item.active {
+          border-color: #262C7C;
+          color: #262C7C;
+        }
+        &-item {
+          @include FlexBox(flex, center, space-between);
+          border: 2px solid #DADBE7;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: .375rem .75rem;
+          margin-top: 10px;
+          width: 268px;
+          height: 44px;
+          p {
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+      .qus {
+        width: 800px !important;
+        // Mobile Version
+        @include Media ($mobile) {
+          width: 100% !important;
+        }
+        .accordion-item {
+          border-color: #E4E5F7 !important;
+          border-left: none !important;
+          border-right: none !important;
+          .accordion-header {
+            .accordion-button {
+              font-weight: $medium !important;
+              color: #6468A1;
+              &:focus {
+                border-color: none !important;
+                box-shadow: none !important;
+              }
+            }
+          }
+          .accordion-button:not(.collapsed) {
+            color: #6468A1 !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+  }
+}

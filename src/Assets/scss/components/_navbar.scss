@@ -1,0 +1,20 @@
+header {
+  .navbar {
+    background-color: $color-BlueDarkPrimary;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.134178);
+    .container {
+      .navbar-nav {
+        position: relative;
+        left: 55px;
+        .nav-link.active {
+          color: $color-RedPrimary;
+        }
+        .nav-link {
+          font-weight: $regular;
+          font-size: $sizeXsm;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
