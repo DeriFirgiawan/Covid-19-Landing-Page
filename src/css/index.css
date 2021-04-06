@@ -140,6 +140,7 @@ header .navbar .container .navbar-nav .nav-link {
 .content-page .banner {
   background-color: #262C7C;
   color: #FFFF;
+  width: 100% !important;
   height: 714px;
   overflow: hidden;
 }
@@ -809,7 +810,7 @@ header .navbar .container .navbar-nav .nav-link {
 .faq-page {
   background-color: #FFFF;
   margin-top: 74px;
-  width: 100%;
+  width: 100% !important;
   height: 543px;
   padding-top: 65px;
 }

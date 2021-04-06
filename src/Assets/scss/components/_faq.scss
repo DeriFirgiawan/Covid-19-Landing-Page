@@ -1,7 +1,7 @@
 .faq-page {
   background-color: $color-Secondary;
   margin-top: 74px;
-  width: 100%;
+  width: 100% !important;
   height: 543px;
   padding-top: 65px;
   @include Media ($mobile) {
