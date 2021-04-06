@@ -538,6 +538,13 @@ header .navbar .container .navbar-nav .nav-link {
   pointer-events: none;
 }
 
+@media (max-width: 575.98px) {
+  .affected-areas-right-body-form .icon-input {
+    width: 100% !important;
+    left: 12rem !important;
+  }
+}
+
 .affected-areas-right-body-form .form-control {
   border: 1px solid #B8BACC !important;
   border-radius: 5px;

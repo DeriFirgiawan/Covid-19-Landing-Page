@@ -88,6 +88,10 @@
           height: 28px;
           position: relative;
           right: 0;
+          @include Media($mobile) {
+            width: 100% !important;
+            left: 12rem !important;
+          }
           left: 15.9rem;
           top: 2.4rem;
           pointer-events: none;
