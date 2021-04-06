@@ -89,7 +89,6 @@
           position: relative;
           right: 0;
           @include Media($mobile) {
-            width: 100% !important;
             left: 12rem !important;
           }
           left: 15.9rem;

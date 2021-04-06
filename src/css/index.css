@@ -540,7 +540,6 @@ header .navbar .container .navbar-nav .nav-link {
 
 @media (max-width: 575.98px) {
   .affected-areas-right-body-form .icon-input {
-    width: 100% !important;
     left: 12rem !important;
   }
 }
